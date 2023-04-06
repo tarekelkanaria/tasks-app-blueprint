@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  padding: 2rem;
+}
+.task {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+.close {
+  width: 3rem;
+}
