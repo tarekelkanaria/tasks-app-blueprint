@@ -29,6 +29,7 @@ const AddTask = ({ onAdd }) => {
     const createdTask = { id: generatedId, text: enteredValue };
     onAdd(createdTask);
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     enteredValue = taskText.current.value;

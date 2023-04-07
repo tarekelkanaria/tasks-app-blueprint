@@ -1,5 +1,5 @@
-import classes from "./Task.module.css";
 import { AiFillCloseCircle } from "react-icons/ai";
+import classes from "./Task.module.css";
 
 const Task = ({ onClose, children }) => {
   return (

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
+import useRequest from "../../hooks/use-request";
 import Task from "./Task/Task";
 import classes from "./TasksList.module.css";
-import useRequest from "../../hooks/use-request";
 
 const TasksList = ({ onGet, all }) => {
   const { isError, isLoading, errorText, sendRequest } = useRequest();
@@ -22,6 +22,7 @@ const TasksList = ({ onGet, all }) => {
       extractData
     );
   }, [sendRequest]);
+
   const removeTask = (id) => {
     onGet(all.filter((task) => task.id !== id));
     sendRequest({
@@ -29,6 +30,7 @@ const TasksList = ({ onGet, all }) => {
       url: `https://favorite-movies-2ce9f-default-rtdb.firebaseio.com/tasks/${id}.json`,
     });
   };
+
   const tasksElements = all.map((task) => (
     <Task key={task.id} onClose={() => removeTask(task.id)}>
       {task.text.toUpperCase()}

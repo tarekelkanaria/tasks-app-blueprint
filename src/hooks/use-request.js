@@ -22,6 +22,7 @@ const useRequest = () => {
       setIsError(true);
       setErrorText(error.message);
     }
+
     setIsLoading(false);
   }, []);
 

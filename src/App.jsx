@@ -9,9 +9,11 @@ function App() {
   const updateTasks = (task) => {
     setTasks((prevTasks) => [...prevTasks, task]);
   };
+
   const getTasks = (tasks) => {
     setTasks(tasks);
   };
+
   return (
     <main>
       <AddTask onAdd={updateTasks} />
