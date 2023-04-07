@@ -43,9 +43,6 @@ const TasksList = ({ onGet, all }) => {
     content = (
       <article>
         <p className="error">Something went wrong {errorText}</p>
-        <button className={classes["again-btn"]} onClick={() => sendRequest()}>
-          Try Again
-        </button>
       </article>
     );
   else if (isLoading) content = <p className="loading">Loading ...</p>;
