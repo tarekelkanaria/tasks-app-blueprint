@@ -2,6 +2,10 @@
 
 A Simple web app uses a _valid_ form to send the text of the task to the database. in addition, the app uses a custom hook to display the list of tasks using `HTTP requests` to **Firebase's real-time database** to handle `GET`, `POST`, and `DELETE` methods, and all _errors_ may occur.
 
+## Demo preview
+
+[Link to app](https://tasks-app-elkanaria.netlify.app/)
+
 ## Author
 
 Tarek Elkanaria
